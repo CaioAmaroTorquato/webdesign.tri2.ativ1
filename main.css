@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c4c2c4;
+
+
+    form {
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 1em;
+        display: grid;
+        gap: .5rem;
+        background-color: #8e8b8e;
+
+        label {
+            display: block;
+        }
+
+        > :first-child {
+            > :last-child {
+                background-color: #a5a5a5;
+                
+                &:focus {
+                    outline: none;
+                    border: 2px solid #535353;
+                }
+            }
+        }
+
+        > :nth-child(2) {
+            > :last-child {
+                background-color: #a5a5a5;
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid #535353;
+                }
+            }
+        }
+
+        > :last-child {
+            display: flex;
+            justify-content: flex-end;
+            gap: .25rem;
+            cursor: pointer;
+
+            > :first-child {
+                border-radius: 5px 10px;
+                background-color: rgb(101, 101, 101);
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            > :last-child {
+                border-radius: 10px 5px;
+                background-color: rgb(101, 101, 101);
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
